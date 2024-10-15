@@ -1,0 +1,768 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/11/2</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 12 19:10:56 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>692 seconds (692145 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dependent.Depedent_test_case_class.VerifyUserCanSendEmail()'><b>VerifyUserCanSendEmail</b><br>Test class: dependent.Depedent_test_case_class</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at dependent.Depedent_test_case_class.VerifyUserCanSendEmail(Depedent_test_case_class.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace697508322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace697508322'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at dependent.Depedent_test_case_class.VerifyUserCanSendEmail(Depedent_test_case_class.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>dependent.Depedent_test_case_class@40238dd0</td></tr>
+<tr>
+<td title='screen.cpature.ScreenCaptureClass2.sampleTestCase()'><b>sampleTestCase</b><br>Test class: screen.cpature.ScreenCaptureClass2</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at screen.cpature.ScreenCaptureClass2.sampleTestCase(ScreenCaptureClass2.java:30)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1677590477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1677590477'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screen.cpature.ScreenCaptureClass2.sampleTestCase(ScreenCaptureClass2.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>36</td>
+<td>screen.cpature.ScreenCaptureClass2@5a18cd76</td></tr>
+<tr>
+<td title='assertions.SoftAssertionClass.verifyUserCanLoginWithValidUserNameAndPassword()'><b>verifyUserCanLoginWithValidUserNameAndPassword</b><br>Test class: assertions.SoftAssertionClass</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	User name is not displayed expected [true] but found [false],
+	deleted user is displayed expected [false] but found [true]
+	at assertions.SoftAssertionClass.verifyUserCanLoginWithValidUserNameAndPassword(SoftAssertionClass.java:25)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061998933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1061998933'><pre>java.lang.AssertionError: The following asserts failed:
+	User name is not displayed expected [true] but found [false],
+	deleted user is displayed expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at assertions.SoftAssertionClass.verifyUserCanLoginWithValidUserNameAndPassword(SoftAssertionClass.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>assertions.SoftAssertionClass@71c27ee8</td></tr>
+<tr>
+<td title='dependent.Depedent_test_case_class2.verifyUserCanLoginWithValidusernameandPassward()'><b>verifyUserCanLoginWithValidusernameandPassward</b><br>Test class: dependent.Depedent_test_case_class2</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at dependent.Depedent_test_case_class2.verifyUserCanLoginWithValidusernameandPassward(Depedent_test_case_class2.java:11)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850301256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850301256'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at dependent.Depedent_test_case_class2.verifyUserCanLoginWithValidusernameandPassward(Depedent_test_case_class2.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>dependent.Depedent_test_case_class2@1b835480</td></tr>
+<tr>
+<td title='assertions.AssertionClass.verifyUserCanReadEmail()'><b>verifyUserCanReadEmail</b><br>Test class: assertions.AssertionClass</td>
+<td><div><pre>java.lang.AssertionError: Current share price is not matching expected [405.55] but found [405.55]
+	at assertions.AssertionClass.verifyUserCanReadEmail(AssertionClass.java:45)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace822087264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace822087264'><pre>java.lang.AssertionError: Current share price is not matching expected [405.55] but found [405.55]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at assertions.AssertionClass.verifyUserCanReadEmail(AssertionClass.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>assertions.AssertionClass@1afdd473</td></tr>
+<tr>
+<td title='assertions.SoftAssertionClass.verifyUserCanReadEmail()'><b>verifyUserCanReadEmail</b><br>Test class: assertions.SoftAssertionClass</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [null] but found [anno.AnnoClass@7e94d093]
+	at assertions.SoftAssertionClass.verifyUserCanReadEmail(SoftAssertionClass.java:46)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace327986890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace327986890'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [null] but found [anno.AnnoClass@7e94d093]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at assertions.SoftAssertionClass.verifyUserCanReadEmail(SoftAssertionClass.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>assertions.SoftAssertionClass@71c27ee8</td></tr>
+<tr>
+<td title='assertions.AssertionClass.verifyUserCanSendEmail()'><b>verifyUserCanSendEmail</b><br>Test class: assertions.AssertionClass</td>
+<td><div><pre>java.lang.AssertionError: expected [null] but found [anno.AnnoClass@1d470d0]
+	at assertions.AssertionClass.verifyUserCanSendEmail(AssertionClass.java:30)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1422273905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1422273905'><pre>java.lang.AssertionError: expected [null] but found [anno.AnnoClass@1d470d0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotSame(Assert.java:772)
+	at org.testng.Assert.assertNull(Assert.java:708)
+	at org.testng.Assert.assertNull(Assert.java:697)
+	at assertions.AssertionClass.verifyUserCanSendEmail(AssertionClass.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>assertions.AssertionClass@1afdd473</td></tr>
+<tr>
+<td title='assertions.SoftAssertionClass.verifyUserCanSendEmail()'><b>verifyUserCanSendEmail</b><br>Test class: assertions.SoftAssertionClass</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	values is not matching expected [45] but found [23]
+	at assertions.SoftAssertionClass.verifyUserCanSendEmail(SoftAssertionClass.java:36)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace349978505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace349978505'><pre>java.lang.AssertionError: The following asserts failed:
+	values is not matching expected [45] but found [23]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at assertions.SoftAssertionClass.verifyUserCanSendEmail(SoftAssertionClass.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>assertions.SoftAssertionClass@71c27ee8</td></tr>
+<tr>
+<td title='annotation.FileUploadTestCase.verifyfileupload()'><b>verifyfileupload</b><br>Test class: annotation.FileUploadTestCase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //h3[@id=&apos;res&apos;]/center (tried for 5 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;LAPTOP-4JQ0QDCA&apos;, ip: &apos;192.168.83.94&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SSWOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4dc594415722448f886b7373ac1e3d3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at annotation.FileUploadTestCase.verifyfileupload(FileUploadTestCase.java:60)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1726519676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1726519676'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //h3[@id=&apos;res&apos;]/center (tried for 5 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;LAPTOP-4JQ0QDCA&apos;, ip: &apos;192.168.83.94&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SSWOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4dc594415722448f886b7373ac1e3d3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at annotation.FileUploadTestCase.verifyfileupload(FileUploadTestCase.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>38</td>
+<td>annotation.FileUploadTestCase@289710d9</td></tr>
+<tr>
+<td title='selenium.FileUploadTestCase2.verifyfileupload()'><b>verifyfileupload</b><br>Test class: selenium.FileUploadTestCase2</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //h3[@id=&apos;res&apos;]/center (tried for 5 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;LAPTOP-4JQ0QDCA&apos;, ip: &apos;192.168.83.94&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SSWOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9615e2dd3163de704809cad2084bbb65
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at selenium.FileUploadTestCase2.verifyfileupload(FileUploadTestCase2.java:61)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812200214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812200214'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //h3[@id=&apos;res&apos;]/center (tried for 5 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;LAPTOP-4JQ0QDCA&apos;, ip: &apos;192.168.83.94&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SSWOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9615e2dd3163de704809cad2084bbb65
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at selenium.FileUploadTestCase2.verifyfileupload(FileUploadTestCase2.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>171</td>
+<td>selenium.FileUploadTestCase2@77825085</td></tr>
+<tr>
+<td title='assertions.AssertionClass.verifyuserslist()'><b>verifyuserslist</b><br>Test class: assertions.AssertionClass</td>
+<td><div><pre>java.lang.AssertionError: expected [45] but found [23]
+	at assertions.AssertionClass.verifyuserslist(AssertionClass.java:55)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1207231495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1207231495'><pre>java.lang.AssertionError: expected [45] but found [23]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at assertions.AssertionClass.verifyuserslist(AssertionClass.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>assertions.AssertionClass@1afdd473</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='enables.EnablesInTestNg.A()'><b>A</b><br>Test class: enables.EnablesInTestNg</td>
+<td></td>
+<td>0</td>
+<td>enables.EnablesInTestNg@79517588</td></tr>
+<tr>
+<td title='anno.AnnoClass.A()'><b>A</b><br>Test class: anno.AnnoClass</td>
+<td></td>
+<td>0</td>
+<td>anno.AnnoClass@294a6b8e</td></tr>
+<tr>
+<td title='anno.AnnoClass.B()'><b>B</b><br>Test class: anno.AnnoClass</td>
+<td></td>
+<td>0</td>
+<td>anno.AnnoClass@294a6b8e</td></tr>
+<tr>
+<td title='annotation.AnnotationInTestNg.VerifyUserCanReadEmail()'><b>VerifyUserCanReadEmail</b><br>Test class: annotation.AnnotationInTestNg</td>
+<td></td>
+<td>0</td>
+<td>annotation.AnnotationInTestNg@16fdec90</td></tr>
+<tr>
+<td title='annotation.AnnotationInTestNg.VerifyUserCanSendEmail()'><b>VerifyUserCanSendEmail</b><br>Test class: annotation.AnnotationInTestNg</td>
+<td></td>
+<td>0</td>
+<td>annotation.AnnotationInTestNg@16fdec90</td></tr>
+<tr>
+<td title='invocation.InvocationCountClass.VerifyUserCanSendEmail()'><b>VerifyUserCanSendEmail</b><br>Test class: invocation.InvocationCountClass</td>
+<td></td>
+<td>0</td>
+<td>invocation.InvocationCountClass@3a0baae5</td></tr>
+<tr>
+<td title='invocation.InvocationCountClass.VerifyUserCanSendEmail()'><b>VerifyUserCanSendEmail</b><br>Test class: invocation.InvocationCountClass</td>
+<td></td>
+<td>0</td>
+<td>invocation.InvocationCountClass@3a0baae5</td></tr>
+<tr>
+<td title='invocation.InvocationCountClass.VerifyUserCanSendEmail()'><b>VerifyUserCanSendEmail</b><br>Test class: invocation.InvocationCountClass</td>
+<td></td>
+<td>0</td>
+<td>invocation.InvocationCountClass@3a0baae5</td></tr>
+<tr>
+<td title='invocation.InvocationCountClass.VerifyUserCanSendEmail()'><b>VerifyUserCanSendEmail</b><br>Test class: invocation.InvocationCountClass</td>
+<td></td>
+<td>0</td>
+<td>invocation.InvocationCountClass@3a0baae5</td></tr>
+<tr>
+<td title='annotation.AnnotationCCC.firstTestCase()'><b>firstTestCase</b><br>Test class: annotation.AnnotationCCC</td>
+<td></td>
+<td>0</td>
+<td>annotation.AnnotationCCC@25aca718</td></tr>
+<tr>
+<td title='annotation.AnnotationInTestNGTwo.sampleAMethodFromAnnotationInTestNGTwo()'><b>sampleAMethodFromAnnotationInTestNGTwo</b><br>Test class: annotation.AnnotationInTestNGTwo</td>
+<td></td>
+<td>0</td>
+<td>annotation.AnnotationInTestNGTwo@3e7dd664</td></tr>
+<tr>
+<td title='annotation.AnnotationInTestNGTwo.sampleBMethodFromAnnotationInTestNGTwo()'><b>sampleBMethodFromAnnotationInTestNGTwo</b><br>Test class: annotation.AnnotationInTestNGTwo</td>
+<td></td>
+<td>0</td>
+<td>annotation.AnnotationInTestNGTwo@3e7dd664</td></tr>
+<tr>
+<td title='brockenlink.BrockenLinkClass.sampleTestCase()'><b>sampleTestCase</b><br>Test class: brockenlink.BrockenLinkClass</td>
+<td></td>
+<td>6</td>
+<td>brockenlink.BrockenLinkClass@6a55299e</td></tr>
+<tr>
+<td title='brockenlink.FindStatusCodeOfLink.sampleTestCase()'><b>sampleTestCase</b><br>Test class: brockenlink.FindStatusCodeOfLink</td>
+<td></td>
+<td>0</td>
+<td>brockenlink.FindStatusCodeOfLink@2f1de2d6</td></tr>
+<tr>
+<td title='brockenlink.BrockenLinkClass4ToolQA2.sampleTestCase()'><b>sampleTestCase</b><br>Test class: brockenlink.BrockenLinkClass4ToolQA2</td>
+<td></td>
+<td>198</td>
+<td>brockenlink.BrockenLinkClass4ToolQA2@403f0a22</td></tr>
+<tr>
+<td title='screen.cpature.ScreenCaptureClass.sampleTestCase()'><b>sampleTestCase</b><br>Test class: screen.cpature.ScreenCaptureClass</td>
+<td></td>
+<td>3</td>
+<td>screen.cpature.ScreenCaptureClass@6995bf68</td></tr>
+<tr>
+<td title='brockenlink.BrockenLinkClass3ToolQA.sampleTestCase()'><b>sampleTestCase</b><br>Test class: brockenlink.BrockenLinkClass3ToolQA</td>
+<td></td>
+<td>67</td>
+<td>brockenlink.BrockenLinkClass3ToolQA@3568f9d2</td></tr>
+<tr>
+<td title='brockenlink.BrockenLinkClass2.sampleTestCase()'><b>sampleTestCase</b><br>Test class: brockenlink.BrockenLinkClass2</td>
+<td></td>
+<td>5</td>
+<td>brockenlink.BrockenLinkClass2@6fb365ed</td></tr>
+<tr>
+<td title='brockenlink.BrockenLinkClass5ToolQA3.verifyLinksAreBrockenOrNot()'><b>verifyLinksAreBrockenOrNot</b><br>Test class: brockenlink.BrockenLinkClass5ToolQA3</td>
+<td></td>
+<td>130</td>
+<td>brockenlink.BrockenLinkClass5ToolQA3@3da30852</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyUserCanLoginWithProvidedCredentials()'><b>verifyUserCanLoginWithProvidedCredentials</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: [Ljava.lang.String;@6da9dc6</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyUserCanLoginWithProvidedCredentials()'><b>verifyUserCanLoginWithProvidedCredentials</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: [Ljava.lang.String;@7fd69dd</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyUserCanLoginWithProvidedCredentials()'><b>verifyUserCanLoginWithProvidedCredentials</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: [Ljava.lang.String;@12010fd1</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyUserCanLoginWithProvidedCredentials2()'><b>verifyUserCanLoginWithProvidedCredentials2</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: Ajay, Ajay@123</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyUserCanLoginWithProvidedCredentials2()'><b>verifyUserCanLoginWithProvidedCredentials2</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: Sanjay, Sanjay@345</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyUserCanLoginWithProvidedCredentials2()'><b>verifyUserCanLoginWithProvidedCredentials2</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: Amar, Am&4567</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='assertions.AssertionClass.verifyUserCanLoginWithValidUserNameAndPassword()'><b>verifyUserCanLoginWithValidUserNameAndPassword</b><br>Test class: assertions.AssertionClass</td>
+<td></td>
+<td>0</td>
+<td>assertions.AssertionClass@1afdd473</td></tr>
+<tr>
+<td title='annotation.AnnotationInTestNg.verifyUserCanLoginWithValidusernameandPassward()'><b>verifyUserCanLoginWithValidusernameandPassward</b><br>Test class: annotation.AnnotationInTestNg</td>
+<td></td>
+<td>0</td>
+<td>annotation.AnnotationInTestNg@16fdec90</td></tr>
+<tr>
+<td title='dependent.Depedent_test_case_class.verifyUserCanLoginWithValidusernameandPassward()'><b>verifyUserCanLoginWithValidusernameandPassward</b><br>Test class: dependent.Depedent_test_case_class</td>
+<td></td>
+<td>0</td>
+<td>dependent.Depedent_test_case_class@40238dd0</td></tr>
+<tr>
+<td title='dependent.Depedent_test_case_class3.verifyUserCanLoginWithValidusernameandPassward()'><b>verifyUserCanLoginWithValidusernameandPassward</b><br>Test class: dependent.Depedent_test_case_class3</td>
+<td></td>
+<td>0</td>
+<td>dependent.Depedent_test_case_class3@4b1d6571</td></tr>
+<tr>
+<td title='selenium.FileUploadTestCase.verifyfileupload()'><b>verifyfileupload</b><br>Test class: selenium.FileUploadTestCase</td>
+<td></td>
+<td>33</td>
+<td>selenium.FileUploadTestCase@7ac0e420</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyuserCanaddDataOnUI()'><b>verifyuserCanaddDataOnUI</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: ABC</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyuserCanaddDataOnUI()'><b>verifyuserCanaddDataOnUI</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: PQR</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyuserCanaddDataOnUI()'><b>verifyuserCanaddDataOnUI</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: GTR</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyuserCanaddDataOnUI()'><b>verifyuserCanaddDataOnUI</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: KJU</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProvideClass.verifyuserCanaddDataOnUI()'><b>verifyuserCanaddDataOnUI</b><br>Test class: data_provider_annotation.DataProvideClass<br>Parameters: hytff</td>
+<td></td>
+<td>0</td>
+<td>data_provider_annotation.DataProvideClass@4eb386df</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dependent.Depedent_test_case_class.VerifyUserCanReadEmail()'><b>VerifyUserCanReadEmail</b><br>Test class: dependent.Depedent_test_case_class</td>
+<td><div><pre>java.lang.Throwable: Method Depedent_test_case_class.VerifyUserCanReadEmail()[pri:0, instance:dependent.Depedent_test_case_class@40238dd0] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689924104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689924104'><pre>java.lang.Throwable: Method Depedent_test_case_class.VerifyUserCanReadEmail()[pri:0, instance:dependent.Depedent_test_case_class@40238dd0] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='data_provider_annotation.DataProviderClass2.verifyUserCanLoginWithProvidedCredentials2()'><b>verifyUserCanLoginWithProvidedCredentials2</b><br>Test class: data_provider_annotation.DataProviderClass2</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;this.sh&quot; is null
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;this.sh&quot; is null
+	at helper.ExcelHelper.getKeysList(ExcelHelper.java:40)
+	at data_provider_annotation.DataProviderClass2.sendUserCredentials(DataProviderClass2.java:18)
+	... 22 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2052814491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2052814491'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;this.sh&quot; is null
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;this.sh&quot; is null
+	at helper.ExcelHelper.getKeysList(ExcelHelper.java:40)
+	at data_provider_annotation.DataProviderClass2.sendUserCredentials(DataProviderClass2.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>data_provider_annotation.DataProviderClass2@5143c662</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="dependent.Depedent_test_case_class2">
+        <methods>
+          <include name="verifyUserCanLoginWithValidusernameandPassward"/>
+        </methods>
+      </class> <!-- dependent.Depedent_test_case_class2 -->
+      <class name="annotation.FileUploadTestCase">
+        <methods>
+          <include name="verifyfileupload"/>
+        </methods>
+      </class> <!-- annotation.FileUploadTestCase -->
+      <class name="assertions.AssertionClass">
+        <methods>
+          <include name="verifyUserCanReadEmail"/>
+          <include name="verifyuserslist"/>
+          <include name="verifyUserCanSendEmail"/>
+        </methods>
+      </class> <!-- assertions.AssertionClass -->
+      <class name="data_provider_annotation.DataProviderClass2">
+        <methods>
+          <include name="verifyUserCanLoginWithProvidedCredentials2"/>
+        </methods>
+      </class> <!-- data_provider_annotation.DataProviderClass2 -->
+      <class name="screen.cpature.ScreenCaptureClass2">
+        <methods>
+          <include name="sampleTestCase"/>
+          <include name="afterMethodForScreenCapture"/>
+        </methods>
+      </class> <!-- screen.cpature.ScreenCaptureClass2 -->
+      <class name="dependent.Depedent_test_case_class">
+        <methods>
+          <include name="VerifyUserCanReadEmail"/>
+          <include name="VerifyUserCanSendEmail"/>
+          <include name="verifyUserCanLoginWithValidusernameandPassward"/>
+        </methods>
+      </class> <!-- dependent.Depedent_test_case_class -->
+      <class name="selenium.FileUploadTestCase2">
+        <methods>
+          <include name="verifyfileupload"/>
+        </methods>
+      </class> <!-- selenium.FileUploadTestCase2 -->
+      <class name="assertions.SoftAssertionClass">
+        <methods>
+          <include name="verifyUserCanLoginWithValidUserNameAndPassword"/>
+          <include name="verifyUserCanReadEmail"/>
+          <include name="verifyUserCanSendEmail"/>
+        </methods>
+      </class> <!-- assertions.SoftAssertionClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
